@@ -1,8 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Sep 30 19:58:44 2020
+'Import os & csv
 
-@author: sambarton
-"""
+import os
+import csv
+
+with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 'r') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        print(row)
 
