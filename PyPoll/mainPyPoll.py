@@ -9,9 +9,6 @@ with open('/Users/sambarton/Python_Homework1/PyPoll/Resources/election_data.csv'
     for row in reader:
         print(row)
 
-
-
-
 'Total Number of Months
 
 
