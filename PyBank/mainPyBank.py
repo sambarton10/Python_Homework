@@ -19,27 +19,32 @@ with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 
     reader = csv.DictReader(csvfile)
     TotalMonths=len(list(reader))
     print(TotalMonths)
-    
-#Average change over entire period
 
+  
+#Subtracting every current row from previous row, taking sum of all rows then finding average.
 import csv
 import os
 
 with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 'r') as csvfile:
-        reader = csv.DictReader(csvfile)
+    reader = csv.DictReader(csvfile)
+    next(reader)
+    change2=[]
+    change3=[]
+    
+    for row in reader:
         
-        next(reader)
-        change2=0
-        
-        for row in reader:
-             
-             print(row['Profit/Losses'])
-             
+        change2.append(row ['Profit/Losses'])
         
         
-#Subtracting every current row from previous row, taking sum of all rows then finding average.
-
+with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 'r') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
         
+        change3.append(row ['Profit/Losses'])
+            
+    print(change2)
+    print('----------')
+    print(change3)
         
 #Finding greatest increase between months
 
@@ -52,6 +57,9 @@ print('Finacial Analysis')
 print('-----------------')
 print('Total Months:', TotalMonths)
 print('Total Profit/Losses:', total)
+print('Average Change: $')
+print('Greatest Increase of Profits In Period:')
+print('Greatest Decrease of Profits In Period:')
 
 
 newdict = {'Date': 'Jun-2016', 'Profit/Losses': '712961'}
@@ -74,5 +82,10 @@ list6=[]
 
 for x in range(4):
     list6.append(list5[x]-list5[x-1])
-print(list6)
+print(list6[1:])
     
+list10=[]
+list10=(list5[x]-list2[x])
+
+print(list10)
+
