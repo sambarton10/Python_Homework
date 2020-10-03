@@ -1,4 +1,4 @@
-'Import os & csv
+#Import os & csv
 
 import os
 import csv
@@ -15,10 +15,20 @@ with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 
     TotalMonths=len(list(reader))
     print(TotalMonths)
     
+with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 'r') as csvfile:
+    reader = csv.DictReader(csvfile) 
+    next(reader)
+    for row in csvfile:
+        x = max(csvfile)
+        print(x)
+    
+    
+    
 print('Finacial Analysis')
 print('-----------------')
 print('Total Months:', TotalMonths)
 print('Total Profit/Losses:', total)
+
 
 
     
