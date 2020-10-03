@@ -22,7 +22,13 @@ with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 
         x = max(csvfile)
         print(x)
     
-    
+with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 'r') as csvfile:
+    reader = csv.DictReader(csvfile) 
+    next(reader)
+    for row in csvfile:
+        x = min(csvfile)
+        print(x)
+        
     
 print('Finacial Analysis')
 print('-----------------')
