@@ -9,13 +9,20 @@ with open('/Users/sambarton/Python_Homework1/PyPoll/Resources/election_data.csv'
     TotalVotes = 0
     for row in reader:
         TotalVotes += 1   
-    print(TotalVotes)
-    
-with open('/Users/sambarton/Python_Homework1/PyPoll/Resources/election_data.csv', 'r') as csvfile:
-    reader = csv.DictReader(csvfile)
-    CandidateOptions = []
-    next(reader)
-    for row in reader:
+
+
+ 
         
         
     
+    print('Election Results')
+    print('-------------------------')
+    print('Total Votes:', TotalVotes)
+    print('-------------------------')
+    print('Khan:')
+    print('Correy:')
+    print('Li:')
+    print('OTooley:')
+    print('-------------------------')
+    print('Winner:') 
+    print('-------------------------')
