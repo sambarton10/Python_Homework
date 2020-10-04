@@ -10,10 +10,7 @@ with open('/Users/sambarton/Python_Homework1/PyPoll/Resources/election_data.csv'
     for row in reader:
         TotalVotes += 1   
 
-
- 
-        
-        
+            
     
     print('Election Results')
     print('-------------------------')
