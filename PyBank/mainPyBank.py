@@ -41,10 +41,7 @@ with open('/Users/sambarton/Python_Homework1/PyBank/Resources/budget_data.csv', 
     for row in reader:
         
         change3.append(row ['Profit/Losses'])
-            
-    print(change2)
-    print('----------')
-    print(change3)
+        
         
 #Finding greatest increase between months
 
@@ -65,7 +62,8 @@ print('Greatest Decrease of Profits In Period:')
 newdict = {'Date': 'Jun-2016', 'Profit/Losses': '712961'}
 print(newdict['Profit/Losses'])
 
-list2=[2,4,7,8]
+list2=[3,4,6,60]
+sumlist2=sum(list2)
 list2.append(10)
 for x in range(5):
     print(list2[x])
@@ -77,7 +75,8 @@ for x in range(5):
 print(list3[1:4])
 
 list5=[10,20,30,40]
-
+sumlist5=sum(list5)
+print(sumlist5)
 list6=[]
 
 for x in range(4):
